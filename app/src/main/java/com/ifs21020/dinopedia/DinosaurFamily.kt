@@ -1,4 +1,7 @@
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class DinosaurFamily(
     val name: String,
     val description: String,
@@ -7,5 +10,5 @@ data class DinosaurFamily(
     val habitat: String,
     val behavior: String,
     val classification: String,
-    val imageResource: Int
-)
+    val imageResourceId: Int
+) : Parcelable

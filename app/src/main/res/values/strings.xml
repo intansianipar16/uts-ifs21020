@@ -1,77 +1,107 @@
 <resources>
     <string name="app_name">DinoPedia</string>
+    <string name="info_dino_icon">Ikon Dinosaurus</string>
+    <string name="info_dino_name">Nama Dinosaurus</string>
+    <string name="info_dino_desc">Deskripsi</string>
+    <string name="info_dino_characteristic">Karakteristik</string>
+    <string name="info_dino_habitat">Habitat</string>
+    <string name="info_dino_behavior">Perilaku</string>
+    <string name="info_dino_classification">Klasifikasi</string>
 
-    <string name="dinosaur_image_description">Deskripsi gambar dinosaurus</string>
+    <string-array name="dinos_name">
+        <item>Tyrannosauridae</item>
+        <item>Stegosauridae</item>
+        <item>Triceratopsidae</item>
+        <item>Hadrosauridae</item>
+        <item>Sauropodidae</item>
+        <item>Ornithomimidae</item>
+        <item>Ceratopsidae</item>
+        <item>Velociraptoridae</item>
+    </string-array>
 
-    <!-- Informasi tentang Tyrannosauridae -->
-    <string name="tyrannosauridae_name">Tyrannosauridae</string>
-    <string name="tyrannosauridae_description">Kelompok dinosaurus karnivora yang mencakup beberapa spesies besar dan kuat seperti Tyrannosaurus rex. Mereka hidup pada periode Kapur Akhir, sekitar 68 hingga 66 juta tahun yang lalu.</string>
-    <string name="tyrannosauridae_lifespan">Periode Hidup: Akhir Kapur (sekitar 68-66 juta tahun yang lalu)</string>
-    <string name="tyrannosauridae_physical_characteristics">Karakteristik Fisik: Tubuh besar dengan tengkorak besar dan gigi runcing yang kuat.</string>
-    <string name="tyrannosauridae_habitat">Habitat dan Lingkungan: Berbagai habitat, dari hutan hujan hingga dataran terbuka.</string>
-    <string name="tyrannosauridae_behavior">Perilaku: Pemburu aktif yang kuat dan mungkin juga kanibalistik.</string>
-    <string name="tyrannosauridae_classification">Klasifikasi: Ordo Saurischia, Infraordo Theropoda.</string>
+    <string-array name="dinos_image">
+        <item>@drawable/tyrannosauridae</item>
+        <item>@drawable/stegosauridae</item>
+        <item>@drawable/triceratopsidae</item>
+        <item>@drawable/hadrosauridae</item>
+        <item>@drawable/sauropodidae</item>
+        <item>@drawable/ornithomimidae</item>
+        <item>@drawable/ceratopsidae</item>
+        <item>@drawable/velociraptoridae</item>
+    </string-array>
 
-    <!-- Informasi tentang Stegosauridae -->
-    <string name="stegosauridae_name">Stegosauridae</string>
-    <string name="stegosauridae_description">Kelompok ini dikenal karena ciri khasnya, yaitu punggung yang dilengkapi dengan piring dan duri. Hidup pada periode Jura, sekitar 155 hingga 150 juta tahun yang lalu.</string>
-    <string name="stegosauridae_lifespan">Periode Hidup: Jura (sekitar 155-150 juta tahun yang lalu)</string>
-    <string name="stegosauridae_physical_characteristics">Karakteristik Fisik: Dilengkapi dengan deretan piring di punggung dan duri besar di ekor.</string>
-    <string name="stegosauridae_habitat">Habitat dan Lingkungan: Wilayah daratan dan hutan yang lebat.</string>
-    <string name="stegosauridae_behavior">Perilaku: Mungkin menggunakan piring dan duri sebagai alat pertahanan terhadap predator.</string>
-    <string name="stegosauridae_classification">Klasifikasi: Ordo Ornithischia, Subordo Stegosauria.</string>
+    <string-array name="dinos_description">
+        <item>Tyrannosauridae adalah keluarga dinosaurus karnivora yang dikenal dengan ukuran besar dan kekuatan predator mereka. Dinosaurus dalam kelompok ini memiliki ciri khas tengkorak besar dengan gigi tajam yang efektif untuk merobek daging mangsanya.</item>
+        <item>Stegosauridae adalah keluarga dinosaurus herbivora yang terkenal dengan punggungnya yang dilengkapi dengan pelat dan duri besar. Dinosaurus dalam kelompok ini biasanya mengonsumsi dedaunan dan tumbuhan rendah.</item>
+        <item>Triceratopsidae terdiri dari dinosaurus herbivora dengan ciri khas tiga tanduk besar dan lempeng tanduk di belakang kepalanya. Kelompok ini dikenal dengan pertahanan yang kuat dari predator.</item>
+        <item>Hadrosauridae adalah keluarga dinosaurus herbivora yang dikenal dengan ciri khas paruh yang mirip bebek. Mereka adalah dinosaurus yang hidup di darat dan sungai, dan dikenal karena kemampuan bergerak secara bipedal atau quadrupedal.</item>
+        <item>Sauropodidae adalah keluarga dinosaurus herbivora yang dikenal dengan ukuran tubuh yang besar dan leher panjang. Mereka adalah salah satu dinosaurus terbesar yang pernah hidup di Bumi.</item>
+        <item>Ornithomimidae adalah keluarga dinosaurus omnivora yang dikenal dengan kecepatan dan kemampuan berlari mereka. Mereka sering kali disebut sebagai "dinosaurus burung" karena penampilan dan perilaku mereka yang menyerupai burung.</item>
+        <item>Ceratopsidae adalah keluarga dinosaurus herbivora yang dikenal dengan ciri khas tanduk dan lempeng pada tengkorak mereka. Dinosaurus dalam kelompok ini umumnya mengonsumsi tumbuhan rendah dan dedaunan.</item>
+        <item>Velociraptoridae adalah keluarga dinosaurus karnivora yang dikenal dengan kecepatan dan kelincahan mereka. Mereka adalah pemburu yang cerdas dan sering kali berburu dalam kelompok kecil.</item>
+    </string-array>
 
-    <!-- Informasi tentang Triceratopsidae -->
-    <string name="triceratopsidae_name">Triceratopsidae</string>
-    <string name="triceratopsidae_description">Dinosaurus berukuran besar dengan tiga tanduk di kepala dan paruh yang mirip paruh bebek. Umumnya hidup pada periode Kapur Akhir, sekitar 68 hingga 66 juta tahun yang lalu.</string>
-    <string name="triceratopsidae_lifespan">Periode Hidup: Akhir Kapur (sekitar 68-66 juta tahun yang lalu)</string>
-    <string name="triceratopsidae_physical_characteristics">Karakteristik Fisik: Ciri khasnya adalah tiga tanduk yang menonjol di kepala dan paruh yang lebar.</string>
-    <string name="triceratopsidae_habitat">Habitat dan Lingkungan: Dataran luas dan padang rumput.</string>
-    <string name="triceratopsidae_behavior">Perilaku: Diperkirakan sebagai hewan herbivora yang menjelajahi wilayah padang rumput.</string>
-    <string name="triceratopsidae_classification">Klasifikasi: Ordo Ornithischia, Subordo Ceratopsia.</string>
+    <string-array name="dinos_characteristic">
+        <item>Karakteristik fisik Tyrannosauridae meliputi tubuh besar, kaki yang kuat, serta lengan yang relatif kecil. Mereka juga memiliki cakar yang kuat dan gigi yang tajam.</item>
+        <item>Karakteristik fisik Stegosauridae meliputi tubuh besar dengan leher panjang, ekor yang dilengkapi dengan duri dan pelat di punggungnya, serta ukuran tubuh yang besar.</item>
+        <item>Karakteristik fisik Triceratopsidae meliputi tubuh besar dengan tanduk besar di hidung dan di atas mata, serta lempeng tanduk di bagian belakang kepalanya.</item>
+        <item>Karakteristik fisik Hadrosauridae meliputi tubuh yang besar dan kokoh, dengan kaki yang kuat untuk bergerak di daratan atau di air. Paruh mereka digunakan untuk mengunyah tumbuhan dan dedaunan.</item>
+        <item>Karakteristik fisik Sauropodidae meliputi tubuh yang besar, leher panjang, dan ekor yang sering kali digunakan untuk keseimbangan. Mereka memiliki gigi yang cocok untuk mengunyah tanaman dan dedaunan.</item>
+        <item>Karakteristik fisik Ornithomimidae meliputi tubuh yang ramping, kaki panjang, dan lengan yang pendek. Paruh mereka digunakan untuk mencari makanan, sementara ekor mereka digunakan untuk keseimbangan saat berlari.</item>
+        <item>Karakteristik fisik Ceratopsidae meliputi tubuh yang besar dan kuat, serta tanduk besar dan lempeng yang menonjol pada tengkorak mereka.</item>
+        <item>Karakteristik fisik Velociraptoridae meliputi tubuh yang ramping dengan kaki yang panjang, cakar yang tajam, dan gigi yang runcing.</item>
+    </string-array>
 
-    <!-- Informasi tentang Hadrosauridae -->
-    <string name="hadrosauridae_name">Hadrosauridae</string>
-    <string name="hadrosauridae_description">Dinosaurus berparuh bebek yang sering bergerombol dan dikenal karena kemampuan mereka untuk berjalan tegak. Umumnya hidup pada periode Kapur Akhir, sekitar 80 hingga 65 juta tahun yang lalu.</string>
-    <string name="hadrosauridae_lifespan">Periode Hidup: Akhir Kapur (sekitar 80-65 juta tahun yang lalu)</string>
-    <string name="hadrosauridae_physical_characteristics">Karakteristik Fisik: Paruh mirip bebek, bergerombol, dan memiliki kaki yang kuat untuk berjalan tegak.</string>
-    <string name="hadrosauridae_habitat">Habitat dan Lingkungan: Daerah dataran rendah dan padang rumput.</string>
-    <string name="hadrosauridae_behavior">Perilaku: Mungkin membentuk kelompok besar untuk perlindungan dari predator.</string>
-    <string name="hadrosauridae_classification">Klasifikasi: Ordo Ornithischia, Subordo Ornithopoda.</string>
+    <string-array name="dinos_habitat">
+        <item>Tyrannosauridae menghuni daerah terbuka seperti dataran rendah, hutan, dan padang rumput.</item>
+        <item>Stegosauridae cenderung menghuni daerah hutan atau bersemak dengan tumbuhan rendah yang melimpah.</item>
+        <item>Triceratopsidae cenderung menghuni daerah dataran rendah atau padang rumput dengan vegetasi yang subur.</item>
+        <item>Hadrosauridae menghuni daerah berair seperti sungai, dan dataran rendah yang subur.</item>
+        <item>Sauropodidae menghuni daerah berhutan dengan vegetasi yang melimpah, serta daerah rawa atau sungai yang berair.</item>
+        <item>Ornithomimidae menghuni daerah terbuka seperti padang rumput dan dataran rendah.</item>
+        <item>Ceratopsidae menghuni padang rumput atau dataran rendah dengan vegetasi yang melimpah.</item>
+        <item>Velociraptoridae menghuni daerah terbuka dan hutan yang menyediakan tempat persembunyian dan mangsa.</item>
+    </string-array>
 
-    <!-- Informasi tentang Sauropodidae -->
-    <string name="sauropodidae_name">Sauropodidae</string>
-    <string name="sauropodidae_description">Dinosaurus herbivora berukuran besar dengan leher panjang dan ekor yang juga panjang. Dominan pada periode Jura hingga Kapur Akhir, sekitar 180 hingga 65 juta tahun yang lalu.</string>
-    <string name="sauropodidae_lifespan">Periode Hidup: Jura hingga Akhir Kapur (sekitar 180-65 juta tahun yang lalu)</string>
-    <string name="sauropodidae_physical_characteristics">Karakteristik Fisik: Tubuh besar, leher panjang, ekor yang panjang, dan kaki yang kuat.</string>
-    <string name="sauropodidae_habitat">Habitat dan Lingkungan: Berbagai habitat, termasuk hutan dan daerah dataran rendah.</string>
-    <string name="sauropodidae_behavior">Perilaku: Mungkin menghabiskan sebagian besar waktu untuk mencari makanan tanaman.</string>
-    <string name="sauropodidae_classification">Klasifikasi: Ordo Saurischia, Subordo Sauropodomorpha.</string>
+    <string-array name="dinos_behavior">
+        <item>Secara umum, Tyrannosauridae dikenal sebagai pemburu yang agresif dan cerdas. Mereka menggunakan kecepatan dan kekuatan untuk mengejar dan menaklukkan mangsa mereka.</item>
+        <item>Stegosauridae mungkin hidup secara berkelompok dan menggunakan duri dan pelat sebagai pertahanan dari predator.</item>
+        <item>Triceratopsidae mungkin hidup secara berkelompok dan menggunakan tanduk mereka sebagai alat pertahanan dan untuk interaksi sosial.</item>
+        <item>Hadrosauridae cenderung hidup secara berkelompok dan mungkin menggunakan perilaku sosial untuk melindungi diri dari predator.</item>
+        <item>Sauropodidae mungkin hidup secara berkelompok dalam kondisi tertentu dan mungkin memiliki perilaku migrasi untuk mencari makanan.</item>
+        <item>Ornithomimidae adalah dinosaurus yang sangat aktif dan lincah. Mereka menggunakan kecepatan dan kemampuan berlari untuk menghindari predator.</item>
+        <item>Ceratopsidae mungkin hidup secara berkelompok dan menggunakan tanduk mereka sebagai pertahanan dari predator, serta untuk menarik pasangan saat musim kawin.</item>
+        <item>Velociraptoridae adalah pemburu yang cerdas dan menggunakan strategi berburu kelompok untuk menyerang mangsa yang lebih besar.</item>
+    </string-array>
 
-    <!-- Informasi tentang Ornithomimidae -->
-    <string name="ornithomimidae_name">Ornithomimidae</string>
-    <string name="ornithomimidae_description">Dinosaurus yang mirip dengan burung atau unta, dengan tubuh ringan dan kaki panjang. Umumnya hidup pada periode Kapur Akhir, sekitar 90 hingga 65 juta tahun yang lalu.</string>
-    <string name="ornithomimidae_lifespan">Periode Hidup: Akhir Kapur (sekitar 90-65 juta tahun yang lalu)</string>
-    <string name="ornithomimidae_physical_characteristics">Karakteristik Fisik: Tubuh ringan, kaki panjang, dan kepala kecil dengan paruh mirip burung.</string>
-    <string name="ornithomimidae_habitat">Habitat dan Lingkungan: Daerah terbuka seperti dataran dan hutan terbuka.</string>
-    <string name="ornithomimidae_behavior">Perilaku: Diperkirakan sebagai pemakan tumbuhan dan mungkin juga pemakan daging kecil.</string>
-    <string name="ornithomimidae_classification">Klasifikasi: Ordo Saurischia, Infraordo Coelurosauria.</string>
+    <string-array name="dinos_classification">
+        <item>Dari segi klasifikasi, Tyrannosauridae termasuk dalam ordo Saurischia dan infraordo Theropoda.</item>
+        <item>Klasifikasi Stegosauridae termasuk dalam ordo Ornithischia dan subordo Stegosauria.</item>
+        <item>Klasifikasi Triceratopsidae termasuk dalam ordo Ornithischia dan subordo Ceratopsia.</item>
+        <item>Klasifikasi Hadrosauridae termasuk dalam ordo Ornithischia dan infraordo Ornithopoda.</item>
+        <item>Dalam klasifikasi, Sauropodidae termasuk dalam ordo Saurischia dan infraordo Sauropodomorpha.</item>
+        <item>Ornithomimidae termasuk dalam ordo Saurischia dan infraordo Coelurosauria.</item>
+        <item>Ceratopsidae termasuk dalam ordo Ornithischia dan subordo Ceratopsia.</item>
+        <item>Velociraptoridae termasuk dalam ordo Saurischia dan infraordo Theropoda.</item>
+    </string-array>
 
-    <!-- Informasi tentang Ceratopsidae -->
-    <string name="ceratopsidae_name">Ceratopsidae</string>
-    <string name="ceratopsidae_description">Dinosaurs bertanduk dengan tubuh besar dan frill di bagian belakang kepala. Umumnya hidup pada periode Kapur Akhir, sekitar 83 hingga 65 juta tahun yang lalu.</string>
-    <string name="ceratopsidae_lifespan">Periode Hidup: Akhir Kapur (sekitar 83-65 juta tahun yang lalu)</string>
-    <string name="ceratopsidae_physical_characteristics">Karakteristik Fisik: Tanduk dan frill yang mencolok, tubuh besar, dan kaki yang kuat.</string>
-    <string name="ceratopsidae_habitat">Habitat dan Lingkungan: Dataran terbuka dan wilayah bersemak.</string>
-    <string name="ceratopsidae_behavior">Perilaku: Mungkin menggunakan tanduk dan frill sebagai alat pertahanan dan peragaan.</string>
-    <string name="ceratopsidae_classification">Klasifikasi: Ordo Ornithischia, Subordo Ceratopsia.</string>
+    <string-array name="dinosaur_lifespans">
+        <!-- Lifespan for Tyrannosauridae -->
+        <item>Tyrannosauridae memiliki periode hidup sekitar 20-30 tahun.</item>
+        <!-- Lifespan for Stegosauridae -->
+        <item>150-155 tahun</item>
+        <!-- Lifespan for Triceratopsidae -->
+        <item>68-72 tahun</item>
+        <!-- Lifespan for Hadrosauridae -->
+        <item>35-40 tahun</item>
+        <!-- Lifespan for Sauropodidae -->
+        <item>70-75 tahun</item>
+        <!-- Lifespan for Ornithomimidae -->
+        <item>10-15 tahun</item>
+        <!-- Lifespan for Ceratopsidae -->
+        <item>45-50 tahun</item>
+        <!-- Lifespan for Velociraptoridae -->
+        <item>25-30 tahun</item>
+    </string-array>
 
-    <!-- Informasi tentang Velociraptoridae -->
-    <string name="velociraptoridae_name">Velociraptoridae</string>
-    <string name="velociraptoridae_description">Dinosaurus predator berukuran sedang dengan tubuh ramping dan cakar yang tajam. Hidup pada periode Kapur Akhir, sekitar 85 hingga 70 juta tahun yang lalu.</string>
-    <string name="velociraptoridae_lifespan">Periode Hidup: Akhir Kapur (sekitar 85-70 juta tahun yang lalu)</string>
-    <string name="velociraptoridae_physical_characteristics">Karakteristik Fisik: Tubuh ramping, cakar yang tajam, dan gigi rahang yang tajam.</string>
-    <string name="velociraptoridae_habitat">Habitat dan Lingkungan: Berbagai habitat, mulai dari hutan hujan hingga padang rumput.</string>
-    <string name="velociraptoridae_behavior">Perilaku: Mungkin berburu dalam kelompok kecil dan menggunakan kecepatan serta kelicikan untuk mengejar mangsa.</string>
-    <string name="velociraptoridae_classification">Klasifikasi: Ordo Saurischia, Infraordo Theropoda.</string>
 </resources>
