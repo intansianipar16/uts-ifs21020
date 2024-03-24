@@ -1,14 +1,27 @@
 <resources>
     <string name="app_name">DinoPedia</string>
-    <string name="info_dino_icon">Ikon Dinosaurus</string>
+    <string name="info_dino_image">Ikon Dinosaurus</string>
     <string name="info_dino_name">Nama Dinosaurus</string>
-    <string name="info_dino_desc">Deskripsi</string>
+    <string name="info_dino_description">Deskripsi</string>
     <string name="info_dino_characteristic">Karakteristik</string>
     <string name="info_dino_habitat">Habitat</string>
     <string name="info_dino_behavior">Perilaku</string>
     <string name="info_dino_classification">Klasifikasi</string>
+    <string name="info_dino_dino_lifespans">Periode Hidup</string>
 
-    <string-array name="dinos_name">
+    <string name="info_dinos_name">Nama</string>
+    <string name="info_dinos_desc">Deskripsi</string>
+    <string name="info_dinos_characteristic">Karakteristik</string>
+    <string name="info_dinos_kelompok">Kelompok</string>
+    <string name="info_dinos_habitat">Habitat</string>
+    <string name="info_dinos_makanan">Makanan</string>
+    <string name="info_dinos_panjang">Panjang</string>
+    <string name="info_dinos_tinggi">Tinggi</string>
+    <string name="info_dinos_bobot">Bobot</string>
+    <string name="info_dinos_kelemahan">Kelemahan</string>
+
+    <!-- Nama Family-->
+    <string-array name="dino_name">
         <item>Tyrannosauridae</item>
         <item>Stegosauridae</item>
         <item>Triceratopsidae</item>
@@ -19,7 +32,7 @@
         <item>Velociraptoridae</item>
     </string-array>
 
-    <string-array name="dinos_image">
+    <string-array name="dino_image">
         <item>@drawable/tyrannosauridae</item>
         <item>@drawable/stegosauridae</item>
         <item>@drawable/triceratopsidae</item>
@@ -30,7 +43,7 @@
         <item>@drawable/velociraptoridae</item>
     </string-array>
 
-    <string-array name="dinos_description">
+    <string-array name="dino_description">
         <item>Tyrannosauridae adalah keluarga dinosaurus karnivora yang dikenal dengan ukuran besar dan kekuatan predator mereka. Dinosaurus dalam kelompok ini memiliki ciri khas tengkorak besar dengan gigi tajam yang efektif untuk merobek daging mangsanya.</item>
         <item>Stegosauridae adalah keluarga dinosaurus herbivora yang terkenal dengan punggungnya yang dilengkapi dengan pelat dan duri besar. Dinosaurus dalam kelompok ini biasanya mengonsumsi dedaunan dan tumbuhan rendah.</item>
         <item>Triceratopsidae terdiri dari dinosaurus herbivora dengan ciri khas tiga tanduk besar dan lempeng tanduk di belakang kepalanya. Kelompok ini dikenal dengan pertahanan yang kuat dari predator.</item>
@@ -41,7 +54,7 @@
         <item>Velociraptoridae adalah keluarga dinosaurus karnivora yang dikenal dengan kecepatan dan kelincahan mereka. Mereka adalah pemburu yang cerdas dan sering kali berburu dalam kelompok kecil.</item>
     </string-array>
 
-    <string-array name="dinos_characteristic">
+    <string-array name="dino_characteristic">
         <item>Karakteristik fisik Tyrannosauridae meliputi tubuh besar, kaki yang kuat, serta lengan yang relatif kecil. Mereka juga memiliki cakar yang kuat dan gigi yang tajam.</item>
         <item>Karakteristik fisik Stegosauridae meliputi tubuh besar dengan leher panjang, ekor yang dilengkapi dengan duri dan pelat di punggungnya, serta ukuran tubuh yang besar.</item>
         <item>Karakteristik fisik Triceratopsidae meliputi tubuh besar dengan tanduk besar di hidung dan di atas mata, serta lempeng tanduk di bagian belakang kepalanya.</item>
@@ -52,7 +65,7 @@
         <item>Karakteristik fisik Velociraptoridae meliputi tubuh yang ramping dengan kaki yang panjang, cakar yang tajam, dan gigi yang runcing.</item>
     </string-array>
 
-    <string-array name="dinos_habitat">
+    <string-array name="dino_habitat">
         <item>Tyrannosauridae menghuni daerah terbuka seperti dataran rendah, hutan, dan padang rumput.</item>
         <item>Stegosauridae cenderung menghuni daerah hutan atau bersemak dengan tumbuhan rendah yang melimpah.</item>
         <item>Triceratopsidae cenderung menghuni daerah dataran rendah atau padang rumput dengan vegetasi yang subur.</item>
@@ -63,7 +76,7 @@
         <item>Velociraptoridae menghuni daerah terbuka dan hutan yang menyediakan tempat persembunyian dan mangsa.</item>
     </string-array>
 
-    <string-array name="dinos_behavior">
+    <string-array name="dino_behavior">
         <item>Secara umum, Tyrannosauridae dikenal sebagai pemburu yang agresif dan cerdas. Mereka menggunakan kecepatan dan kekuatan untuk mengejar dan menaklukkan mangsa mereka.</item>
         <item>Stegosauridae mungkin hidup secara berkelompok dan menggunakan duri dan pelat sebagai pertahanan dari predator.</item>
         <item>Triceratopsidae mungkin hidup secara berkelompok dan menggunakan tanduk mereka sebagai alat pertahanan dan untuk interaksi sosial.</item>
@@ -74,7 +87,7 @@
         <item>Velociraptoridae adalah pemburu yang cerdas dan menggunakan strategi berburu kelompok untuk menyerang mangsa yang lebih besar.</item>
     </string-array>
 
-    <string-array name="dinos_classification">
+    <string-array name="dino_classification">
         <item>Dari segi klasifikasi, Tyrannosauridae termasuk dalam ordo Saurischia dan infraordo Theropoda.</item>
         <item>Klasifikasi Stegosauridae termasuk dalam ordo Ornithischia dan subordo Stegosauria.</item>
         <item>Klasifikasi Triceratopsidae termasuk dalam ordo Ornithischia dan subordo Ceratopsia.</item>
@@ -85,23 +98,225 @@
         <item>Velociraptoridae termasuk dalam ordo Saurischia dan infraordo Theropoda.</item>
     </string-array>
 
-    <string-array name="dinosaur_lifespans">
-        <!-- Lifespan for Tyrannosauridae -->
+    <string-array name="dino_lifespans">
         <item>Tyrannosauridae memiliki periode hidup sekitar 20-30 tahun.</item>
-        <!-- Lifespan for Stegosauridae -->
         <item>150-155 tahun</item>
-        <!-- Lifespan for Triceratopsidae -->
         <item>68-72 tahun</item>
-        <!-- Lifespan for Hadrosauridae -->
         <item>35-40 tahun</item>
-        <!-- Lifespan for Sauropodidae -->
         <item>70-75 tahun</item>
-        <!-- Lifespan for Ornithomimidae -->
         <item>10-15 tahun</item>
-        <!-- Lifespan for Ceratopsidae -->
         <item>45-50 tahun</item>
-        <!-- Lifespan for Velociraptoridae -->
         <item>25-30 tahun</item>
     </string-array>
 
+    <!-- String array untuk nama-nama dinosaurus -->
+    <string-array name="dinos_name">
+        <item>Tyrannosaurus rex (T. rex)</item>
+        <item>Daspletosaurus</item>
+        <item>Stegosaurus</item>
+        <item>Kentrosaurus</item>
+        <item>Triceratops</item>
+        <item>Torosaurus</item>
+        <item>Parasaurolophus</item>
+        <item>Edmontosaurus</item>
+        <item>Brachiosaurus</item>
+        <item>Diplodocus</item>
+        <item>Ornithomimus</item>
+        <item>Struthiomimus</item>
+        <item>Triceratops</item>
+        <item>Styracosaurus</item>
+        <item>Velociraptor</item>
+        <item>Deinonychus</item>
+    </string-array>
+
+    <string-array name="dinos_image">
+        <item>@drawable/daspletosaurus</item>
+        <item>@drawable/stegosaurus</item>
+        <item>@drawable/kentrosaurus</item>
+        <item>@drawable/triceratops</item>
+        <item>@drawable/torosaurus</item>
+        <item>@drawable/parasaurolophus</item>
+        <item>@drawable/edmontosaurus</item>
+        <item>@drawable/brachiosaurus</item>
+        <item>@drawable/diplodocus</item>
+        <item>@drawable/ornithomimus</item>
+        <item>@drawable/struthiomimus</item>
+        <item>@drawable/triceratops</item>
+        <item>@drawable/styracosaurus</item>
+        <item>@drawable/velociraptor</item>
+        <item>@drawable/deinonychus</item>
+    </string-array>
+
+    <string-array name="dinos_desc">
+        <item>Deskripsi Tyrannosaurus rex</item>
+        <item>Deskripsi Daspletosaurus</item>
+        <item>Deskripsi Stegosaurus</item>
+        <item>Deskripsi Kentrosaurus</item>
+        <item>Deskripsi Triceratops</item>
+        <item>Deskripsi Torosaurus</item>
+        <item>Deskripsi Parasaurolophus</item>
+        <item>Deskripsi Edmontosaurus</item>
+        <item>Deskripsi Brachiosaurus</item>
+        <item>Deskripsi Diplodocus</item>
+        <item>Deskripsi Ornithomimus</item>
+        <item>Deskripsi Struthiomimus</item>
+        <item>Deskripsi Styracosaurus</item>
+        <item>Deskripsi Velociraptor</item>
+        <item>Deskripsi Deinonychus</item>
+    </string-array>
+
+    <string-array name="dinos_characteristic">
+        <item>Tyrannosaurus rex adalah dinosaurus karnivora raksasa dengan gigi tajam dan rahang yang kuat. Mereka memiliki tubuh yang besar, kaki yang kokoh, dan cakar yang kuat untuk menyerang mangsa mereka.</item>
+        <item>Daspletosaurus adalah dinosaurus karnivora yang memiliki gigi yang tajam dan rahang yang kuat. Mereka mungkin hidup secara berkelompok dan menggunakan strategi berburu kelompok untuk menaklukkan mangsa mereka.</item>
+        <item>Stegosaurus adalah dinosaurus herbivora yang memiliki lempengan tulang besar di punggungnya dan sepasang duri besar di ekornya. Mereka menggunakan struktur ini sebagai pertahanan terhadap predator dan mungkin untuk berkomunikasi dengan sesama.</item>
+        <item>Kentrosaurus adalah dinosaurus herbivora yang memiliki punggung yang dilindungi oleh duri-duri besar. Mereka mungkin hidup secara berkelompok dan menggunakan duri mereka sebagai pertahanan terhadap predator.</item>
+        <item>Triceratops adalah dinosaurus herbivora yang memiliki tiga tanduk besar di atas tengkoraknya dan lempeng besar di punggungnya. Mereka menggunakan tanduk ini sebagai pertahanan terhadap predator dan mungkin untuk interaksi sosial.</item>
+        <item>Torosaurus adalah dinosaurus herbivora yang memiliki tanduk besar yang melengkung ke belakang dari tengkoraknya. Mereka mungkin menggunakan tanduk ini untuk pertahanan dan mungkin untuk menarik pasangan saat musim kawin.</item>
+        <item>Parasaurolophus adalah dinosaurus herbivora yang memiliki crests yang besar dan berongga di kepala mereka. Mereka mungkin menggunakan crests ini untuk berkomunikasi dengan sesama dan mungkin sebagai alat pertahanan.</item>
+        <item>Edmontosaurus adalah dinosaurus herbivora yang memiliki tubuh besar dengan rahang yang kuat untuk mengunyah makanan tumbuhan. Mereka mungkin hidup dalam kelompok besar untuk melindungi diri dari predator.</item>
+        <item>Brachiosaurus adalah dinosaurus herbivora yang memiliki leher panjang dan tubuh besar. Mereka mungkin menggunakan leher panjang mereka untuk mencapai dedaunan tinggi dan mungkin hidup dalam kelompok dalam kondisi tertentu.</item>
+        <item>Diplodocus adalah dinosaurus herbivora yang memiliki tubuh panjang dan leher yang panjang. Mereka mungkin hidup dalam kelompok dan menggunakan leher panjang mereka untuk mencapai dedaunan tinggi.</item>
+        <item>Ornithomimus adalah dinosaurus karnivora yang sangat aktif dan lincah. Mereka menggunakan kecepatan dan kemampuan berlari untuk menghindari predator.</item>
+        <item>Struthiomimus adalah dinosaurus karnivora yang sangat cepat dan lincah. Mereka menggunakan kecepatan mereka untuk melarikan diri dari predator dan mungkin untuk berburu mangsa kecil.</item>
+        <item>Styracosaurus adalah dinosaurus herbivora yang memiliki tanduk besar di tengkoraknya dan lempengan tulang besar di punggungnya. Mereka mungkin menggunakan tanduk ini sebagai pertahanan terhadap predator dan mungkin untuk menarik pasangan saat musim kawin.</item>
+        <item>Velociraptor adalah dinosaurus karnivora yang kecil dan cerdas. Mereka menggunakan strategi berburu kelompok untuk menyerang mangsa mereka.</item>
+        <item>Deinonychus adalah dinosaurus karnivora yang lincah dan cerdas. Mereka menggunakan cakar-cakar tajam dan strategi berburu kelompok untuk menyerang mangsa mereka.</item>
+    </string-array>
+
+    <!-- Informasi untuk kelompok dinosaurus -->
+    <string-array name="dinos_kelompok">
+        <item>Tyrannosaurus rex termasuk dalam kelompok Tyrannosauridae</item>
+        <item>Daspletosaurus termasuk dalam kelompok Tyrannosauridae</item>
+        <item>Stegosaurus termasuk dalam kelompok Stegosauridae</item>
+        <item>Kentrosaurus termasuk dalam kelompok Stegosauridae</item>
+        <item>Triceratops termasuk dalam kelompok Triceratopsidae</item>
+        <item>Torosaurus termasuk dalam kelompok Triceratopsidae</item>
+        <item>Parasaurolophus termasuk dalam kelompok Hadrosauridae</item>
+        <item>Edmontosaurus termasuk dalam kelompok Hadrosauridae</item>
+        <item>Brachiosaurus termasuk dalam kelompok Sauropodidae</item>
+        <item>Diplodocus termasuk dalam kelompok Sauropodidae</item>
+        <item>Ornithomimus termasuk dalam kelompok Ornithomimidae</item>
+        <item>Struthiomimus termasuk dalam kelompok Ornithomimidae</item>
+        <item>Styracosaurus termasuk dalam kelompok Ceratopsidae</item>
+        <item>Velociraptor termasuk dalam kelompok Velociraptoridae</item>
+        <item>Deinonychus termasuk dalam kelompok Velociraptoridae</item>
+    </string-array>
+
+    <!-- Informasi untuk habitat dinosaurus -->
+    <string-array name="dinos_habitat">
+        <item>Tyrannosaurus rex hidup di daratan dengan kondisi iklim tropis hingga subtropis.</item>
+        <item>Daspletosaurus hidup di wilayah yang sekarang menjadi bagian dari Amerika Utara.</item>
+        <item>Stegosaurus hidup di daerah yang sekarang menjadi bagian dari Amerika Utara dan Eropa.</item>
+        <item>Kentrosaurus hidup di wilayah yang sekarang menjadi bagian dari Afrika.</item>
+        <item>Triceratops hidup di wilayah yang sekarang menjadi bagian dari Amerika Utara.</item>
+        <item>Torosaurus hidup di wilayah yang sekarang menjadi bagian dari Amerika Utara.</item>
+        <item>Parasaurolophus hidup di wilayah yang sekarang menjadi bagian dari Amerika Utara.</item>
+        <item>Edmontosaurus hidup di wilayah yang sekarang menjadi bagian dari Amerika Utara.</item>
+        <item>Brachiosaurus hidup di daratan dengan iklim yang hangat dan lembap.</item>
+        <item>Diplodocus hidup di wilayah yang sekarang menjadi bagian dari Amerika Utara.</item>
+        <item>Ornithomimus hidup di wilayah yang sekarang menjadi bagian dari Amerika Utara.</item>
+        <item>Struthiomimus hidup di wilayah yang sekarang menjadi bagian dari Amerika Utara.</item>
+        <item>Styracosaurus hidup di wilayah yang sekarang menjadi bagian dari Amerika Utara.</item>
+        <item>Velociraptor hidup di wilayah yang sekarang menjadi bagian dari Asia.</item>
+        <item>Deinonychus hidup di wilayah yang sekarang menjadi bagian dari Amerika Utara.</item>
+    </string-array>
+
+    <!-- Informasi untuk makanan dinosaurus -->
+    <string-array name="dinos_makanan">
+        <item>Tyrannosaurus rex adalah pemangsa karnivora, memakan hewan-hewan seperti Triceratops dan hadrosaurus.</item>
+        <item>Daspletosaurus juga adalah pemangsa karnivora, memakan berbagai jenis hewan herbivora.</item>
+        <item>Stegosaurus adalah hewan herbivora, memakan dedaunan, tanaman, dan mungkin semak-semak.</item>
+        <item>Kentrosaurus adalah hewan herbivora, memakan dedaunan, tanaman, dan mungkin semak-semak.</item>
+        <item>Triceratops adalah hewan herbivora, memakan berbagai jenis tanaman rendah dan semak-semak.</item>
+        <item>Torosaurus adalah hewan herbivora, memakan berbagai jenis tanaman rendah dan semak-semak.</item>
+        <item>Parasaurolophus adalah hewan herbivora, memakan dedaunan, tanaman, dan mungkin semak-semak.</item>
+        <item>Edmontosaurus adalah hewan herbivora, memakan dedaunan, tanaman, dan mungkin pohon-pohon kecil.</item>
+        <item>Brachiosaurus adalah hewan herbivora, memakan dedaunan, tanaman, dan mungkin pohon-pohon.</item>
+        <item>Diplodocus adalah hewan herbivora, memakan dedaunan, tanaman, dan mungkin pohon-pohon.</item>
+        <item>Ornithomimus adalah hewan herbivora, memakan dedaunan, tanaman, dan mungkin buah-buahan kecil.</item>
+        <item>Struthiomimus adalah hewan herbivora, memakan dedaunan, tanaman, dan mungkin buah-buahan kecil.</item>
+        <item>Styracosaurus adalah hewan herbivora, memakan dedaunan, tanaman, dan mungkin semak-semak.</item>
+        <item>Velociraptor adalah pemangsa karnivora, memakan hewan kecil dan mungkin hewan herbivora kecil.</item>
+        <item>Deinonychus adalah pemangsa karnivora, memakan hewan kecil dan mungkin hewan herbivora kecil.</item>
+    </string-array>
+
+    <string-array name="dinos_panjang">
+        <item>Tyrannosaurus rex memiliki panjang sekitar 12-13 meter.</item>
+        <item>Daspletosaurus memiliki panjang sekitar 8-9 meter.</item>
+        <item>Stegosaurus memiliki panjang sekitar 9 meter.</item>
+        <item>Kentrosaurus memiliki panjang sekitar 4-5 meter.</item>
+        <item>Triceratops memiliki panjang sekitar 7-9 meter.</item>
+        <item>Torosaurus memiliki panjang sekitar 7-9 meter.</item>
+        <item>Parasaurolophus memiliki panjang sekitar 9-10 meter.</item>
+        <item>Edmontosaurus memiliki panjang sekitar 12-13 meter.</item>
+        <item>Brachiosaurus memiliki panjang sekitar 22-30 meter.</item>
+        <item>Diplodocus memiliki panjang sekitar 25-30 meter.</item>
+        <item>Ornithomimus memiliki panjang sekitar 3-4 meter.</item>
+        <item>Struthiomimus memiliki panjang sekitar 3-4 meter.</item>
+        <item>Styracosaurus memiliki panjang sekitar 5-6 meter.</item>
+        <item>Velociraptor memiliki panjang sekitar 1.8-2 meter.</item>
+        <item>Deinonychus memiliki panjang sekitar 3-3.4 meter.</item>
+    </string-array>
+
+    <!-- Informasi untuk tinggi dinosaurus -->
+    <string-array name="dinos_tinggi">
+        <item>Tyrannosaurus rex memiliki tinggi sekitar 4-6 meter di puncak kepalanya.</item>
+        <item>Daspletosaurus memiliki tinggi sekitar 3-4 meter di puncak kepalanya.</item>
+        <item>Stegosaurus memiliki tinggi sekitar 4 meter di punggungnya.</item>
+        <item>Kentrosaurus memiliki tinggi sekitar 2-2.5 meter di punggungnya.</item>
+        <item>Triceratops memiliki tinggi sekitar 3 meter di pundaknya.</item>
+        <item>Torosaurus memiliki tinggi sekitar 3 meter di pundaknya.</item>
+        <item>Parasaurolophus memiliki tinggi sekitar 2-2.5 meter di kepala.</item>
+        <item>Edmontosaurus memiliki tinggi sekitar 4-5 meter di pundaknya.</item>
+        <item>Brachiosaurus memiliki tinggi sekitar 9-12 meter di puncak kepalanya.</item>
+        <item>Diplodocus memiliki tinggi sekitar 5-7 meter di punggungnya.</item>
+        <item>Ornithomimus memiliki tinggi sekitar 2 meter di puncak kepalanya.</item>
+        <item>Struthiomimus memiliki tinggi sekitar 2 meter di puncak kepalanya.</item>
+        <item>Styracosaurus memiliki tinggi sekitar 2-2.5 meter di puncak tengkoraknya.</item>
+        <item>Velociraptor memiliki tinggi sekitar 0.5-0.6 meter di punggungnya.</item>
+        <item>Deinonychus memiliki tinggi sekitar 1-1.5 meter di punggungnya.</item>
+    </string-array>
+
+    <!-- Informasi untuk bobot dinosaurus -->
+    <string-array name="dinos_bobot">
+        <item>Tyrannosaurus rex memiliki bobot sekitar 8-9 ton.</item>
+        <item>Daspletosaurus memiliki bobot sekitar 2-3 ton.</item>
+        <item>Stegosaurus memiliki bobot sekitar 2-3 ton.</item>
+        <item>Kentrosaurus memiliki bobot sekitar 1-2 ton.</item>
+        <item>Triceratops memiliki bobot sekitar 6-12 ton.</item>
+        <item>Torosaurus memiliki bobot sekitar 5-10 ton.</item>
+        <item>Parasaurolophus memiliki bobot sekitar 2-3 ton.</item>
+        <item>Edmontosaurus memiliki bobot sekitar 4-5 ton.</item>
+        <item>Brachiosaurus memiliki bobot sekitar 30-50 ton.</item>
+        <item>Diplodocus memiliki bobot sekitar 10-16 ton.</item>
+        <item>Ornithomimus memiliki bobot sekitar 200-400 kg.</item>
+        <item>Struthiomimus memiliki bobot sekitar 150-300 kg.</item>
+        <item>Styracosaurus memiliki bobot sekitar 2-3 ton.</item>
+        <item>Velociraptor memiliki bobot sekitar 15-20 kg.</item>
+        <item>Deinonychus memiliki bobot sekitar 70-100 kg.</item>
+    </string-array>
+
+    <string-array name="dinos_kelemahan">
+        <item>Tyrannosaurus rex rentan terhadap luka pada otak dan dapat kehilangan keseimbangan jika cedera pada ekor atau kaki.</item>
+        <item>Daspletosaurus rentan terhadap serangan dari hewan lebih besar atau dalam jumlah besar.</item>
+        <item>Stegosaurus memiliki otak kecil dan mungkin rentan terhadap predator yang cerdas.</item>
+        <item>Kentrosaurus memiliki tubuh yang lambat dan mungkin rentan terhadap serangan predator yang cepat.</item>
+        <item>Triceratops rentan terhadap serangan dari predator yang cerdas atau dalam jumlah besar.</item>
+        <item>Torosaurus rentan terhadap serangan dari predator yang cerdas atau dalam jumlah besar.</item>
+        <item>Parasaurolophus memiliki otak kecil dan mungkin rentan terhadap predator yang cerdas.</item>
+        <item>Edmontosaurus rentan terhadap serangan dari predator yang cerdas atau dalam jumlah besar.</item>
+        <item>Brachiosaurus memiliki tubuh besar yang mungkin membuatnya rentan terhadap kekurangan makanan atau predator yang cerdas.</item>
+        <item>Diplodocus memiliki tubuh besar yang mungkin membuatnya rentan terhadap kekurangan makanan atau predator yang cerdas.</item>
+        <item>Ornithomimus memiliki tubuh ringan dan mungkin rentan terhadap predator yang cepat dan kuat.</item>
+        <item>Struthiomimus memiliki tubuh ringan dan mungkin rentan terhadap predator yang cepat dan kuat.</item>
+        <item>Styracosaurus memiliki kerentanan terhadap serangan predator yang cerdas atau dalam jumlah besar.</item>
+        <item>Velociraptor rentan terhadap serangan dari hewan yang lebih besar atau dalam jumlah besar.</item>
+        <item>Deinonychus rentan terhadap serangan dari hewan yang lebih besar atau dalam jumlah besar.</item>
+    </string-array>
+
 </resources>
+
+
+
+
+

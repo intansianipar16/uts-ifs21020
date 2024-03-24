@@ -1,51 +1,41 @@
 package com.ifs21020.dinopedia
 
-import DinosaurFamily
-import android.content.Context
+import Dinosaur
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.ifs21020.dinopedia.databinding.ItemDinosaurBinding
 
-class DinosaurAdapter(
-    private val context: Context,
-    private val dinosaurList: List<DinosaurFamily>,
-    private val listener: OnItemClickListener
-) :
-    RecyclerView.Adapter<DinosaurAdapter.DinosaurViewHolder>() {
+class DinosaurAdapter(private val listDino: ArrayList<Dinosaur>) :
+    RecyclerView.Adapter<DinosaurAdapter.ListViewHolder>() {
+    private lateinit var onItemClickCallback: OnItemClickCallback
 
-    inner class DinosaurViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
-        val imageView: ImageView = itemView.findViewById(R.id.image_dinosaur)
-        val textView: TextView = itemView.findViewById(R.id.text_dinosaur_name)
+    fun setOnItemClickCallback(onItemClickCallback:  OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
 
-        init {
-            itemView.setOnClickListener(this)
+    override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ListViewHolder {
+        val binding = ItemDinosaurBinding.inflate(LayoutInflater.from(viewGroup.context), viewGroup, false)
+        return ListViewHolder(binding)
+    }
+
+    @SuppressLint("SetTextI18n")
+    override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
+        val dino = listDino[position]
+        holder.binding.ivItemImage.setImageResource(dino.dinos_image)
+        holder.binding.s.text = dino.dinos_name
+        holder.itemView.setOnClickListener {
+            onItemClickCallback.onItemClicked(listDino[holder.adapterPosition])
         }
-
-        override fun onClick(view: View) {
-            val position = adapterPosition
-            if (position != RecyclerView.NO_POSITION) {
-                listener.onItemClick(position)
-            }
-        }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DinosaurViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_dinosaur, parent, false)
-        return DinosaurViewHolder(itemView)
+    override fun getItemCount(): Int = listDino.size
+    class ListViewHolder(var binding: ItemDinosaurBinding) : RecyclerView.ViewHolder(binding.root)
+
+    interface OnItemClickCallback {
+        fun onItemClicked(data: Dinosaur)
+
     }
 
-    override fun onBindViewHolder(holder: DinosaurViewHolder, position: Int) {
-        val currentItem = dinosaurList[position]
-        holder.imageView.setImageResource(currentItem.imageResourceId)
-        holder.textView.text = currentItem.name
-    }
-
-    override fun getItemCount() = dinosaurList.size
-
-    interface OnItemClickListener {
-        fun onItemClick(position: Int)
-    }
 }
